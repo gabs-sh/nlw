@@ -3,14 +3,13 @@ import {Feather as Icon} from '@expo/vector-icons'
 import { View, ImageBackground, Image, StyleSheet, Text } from 'react-native'
 import {RectButton} from 'react-native-gesture-handler'
 import {useNavigation} from '@react-navigation/native'
-import Points from '../Points'
 
 const Home = () => {
 
     const navigation = useNavigation()
 
     function handleNavigateToPoints() {
-        navigation.navigate('Points')
+        navigation.navigate('Points') //esse 'Points' é o nome que eu passei na propriedade 'name' da 'rota'
     }
 
     return (
